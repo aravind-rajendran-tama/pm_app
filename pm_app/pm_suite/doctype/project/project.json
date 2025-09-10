@@ -7,30 +7,52 @@
  "field_order": [
   "project_name",
   "status",
-  "description"
+  "description",
+  "project_code",
+  "start_date",
+  "end_date"
  ],
  "fields": [
   {
+   "bold": 1,
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "Project Name"
+   "in_list_view": 1,
+   "label": "Project Name",
+   "reqd": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Planned\nIn Progress\nOn Hold\nDone"
+   "options": "Planned\nActive(In Progress)\nOn Hold\nCompleted"
   },
   {
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "fieldname": "project_code",
+   "fieldtype": "Data",
+   "label": "Project Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-10 23:10:12.400690",
+ "modified": "2025-09-11 01:14:52.951959",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Project",
