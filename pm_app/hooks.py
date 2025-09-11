@@ -1,7 +1,7 @@
 app_name = "pm_app"
-app_title = "PM Suite"
+app_title = "Project Management App"
 app_publisher = "Tama Systems "
-app_description = "Project Management Application"
+app_description = "Lightweight multi-tenant project management app built on Frappe."
 app_email = "info@pm.local"
 app_license = "mit"
 
