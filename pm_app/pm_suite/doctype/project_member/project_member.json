@@ -1,0 +1,48 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-12 00:23:49.684378",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "user",
+  "role_in_project",
+  "can_create_tasks"
+ ],
+ "fields": [
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "user",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "role_in_project",
+   "fieldtype": "Select",
+   "label": "role_in_project",
+   "options": "Manager\nWorker\nViewer"
+  },
+  {
+   "default": "0",
+   "fieldname": "can_create_tasks",
+   "fieldtype": "Check",
+   "label": "can_create_tasks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-12 00:31:19.921110",
+ "modified_by": "Administrator",
+ "module": "PM Suite",
+ "name": "Project Member",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

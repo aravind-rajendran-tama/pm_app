@@ -5,44 +5,90 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "title",
+  "subject",
   "project",
-  "assignee",
+  "company",
+  "assigned_to",
+  "status",
+  "priority",
   "due_date",
-  "status"
+  "estimated_hours",
+  "description",
+  "checklist",
+  "is_published"
  ],
  "fields": [
   {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title"
-  },
-  {
    "fieldname": "project",
-   "fieldtype": "Data",
-   "label": "Project"
-  },
-  {
-   "fieldname": "assignee",
-   "fieldtype": "Data",
-   "label": "Assignee"
+   "fieldtype": "Link",
+   "label": "project",
+   "options": "Project"
   },
   {
    "fieldname": "due_date",
    "fieldtype": "Date",
-   "label": "Due Date"
+   "label": "due_date"
   },
   {
+   "default": "Open",
    "fieldname": "status",
    "fieldtype": "Select",
-   "label": "Status",
-   "options": "Todo\nDoing\nReview\nDone"
+   "label": "status",
+   "options": "Open\nIn Progress\nBlocked\nDone"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "assigned_to",
+   "options": "User"
+  },
+  {
+   "default": "Medium",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "priority",
+   "options": "Low\nMedium\nHigh\nUrgent"
+  },
+  {
+   "fieldname": "estimated_hours",
+   "fieldtype": "Float",
+   "label": "estimated_hours"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "description"
+  },
+  {
+   "fieldname": "checklist",
+   "fieldtype": "Table",
+   "label": "checklist",
+   "options": "Task Checklist"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "is_published"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-10 23:14:27.270875",
+ "modified": "2025-09-12 00:39:34.953710",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Task",

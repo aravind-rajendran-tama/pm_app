@@ -1,79 +1,80 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-09-10 23:06:31.646057",
+ "creation": "2025-09-12 00:12:35.687971",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "project_name",
+  "project_key",
+  "company",
   "status",
-  "description",
-  "project_code",
   "start_date",
   "end_date",
   "is_published",
-  "route",
-  "title"
+  "description",
+  "members"
  ],
  "fields": [
   {
-   "bold": 1,
    "fieldname": "project_name",
    "fieldtype": "Data",
+   "label": "project_name"
+  },
+  {
+   "fieldname": "project_key",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Project Name",
+   "label": "project_key",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "company",
+   "options": "Company",
    "reqd": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
-   "label": "Status",
-   "options": "Planned\nActive(In Progress)\nOn Hold\nCompleted"
-  },
-  {
-   "fieldname": "description",
-   "fieldtype": "Small Text",
-   "label": "Description"
-  },
-  {
-   "fieldname": "project_code",
-   "fieldtype": "Data",
-   "label": "Project Code",
-   "unique": 1
+   "label": "status",
+   "options": "Planned\nIn Progress\nOn Hold\nCompleted\nCancelled"
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
-   "label": "Start Date"
+   "label": "start_date"
   },
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
-   "label": "End Date"
+   "label": "end_date"
   },
   {
    "default": "0",
    "fieldname": "is_published",
    "fieldtype": "Check",
-   "label": "Is Published"
+   "label": "is_published"
   },
   {
-   "fieldname": "route",
-   "fieldtype": "Data",
-   "label": "Route"
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "description"
   },
   {
-   "fieldname": "title",
-   "fieldtype": "Data",
-   "label": "Title"
+   "fieldname": "members",
+   "fieldtype": "Link",
+   "label": "members",
+   "options": "Project Member"
   }
  ],
  "grid_page_length": 50,
- "has_web_view": 1,
  "index_web_pages_for_search": 1,
- "is_published_field": "is_published",
  "links": [],
- "modified": "2025-09-11 14:57:29.728768",
+ "modified": "2025-09-12 00:27:18.718116",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Project",
@@ -88,15 +89,12 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
-   "select": 1,
    "share": 1,
    "write": 1
   }
  ],
- "route": "Project",
  "row_format": "Dynamic",
- "sort_field": "creation",
+ "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "website_search_field": "project_name"
+ "states": []
 }
