@@ -10,7 +10,10 @@
   "description",
   "project_code",
   "start_date",
-  "end_date"
+  "end_date",
+  "is_published",
+  "route",
+  "title"
  ],
  "fields": [
   {
@@ -47,12 +50,30 @@
    "fieldname": "end_date",
    "fieldtype": "Date",
    "label": "End Date"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2025-09-11 01:14:52.951959",
+ "modified": "2025-09-11 14:57:29.728768",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Project",
@@ -67,12 +88,15 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }
  ],
+ "route": "Project",
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "website_search_field": "project_name"
 }
