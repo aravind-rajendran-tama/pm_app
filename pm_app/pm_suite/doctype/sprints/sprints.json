@@ -8,7 +8,8 @@
   "name1",
   "start_date",
   "end_date",
-  "goal"
+  "goal",
+  "project"
  ],
  "fields": [
   {
@@ -30,12 +31,18 @@
    "fieldname": "goal",
    "fieldtype": "Small Text",
    "label": "Goal"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "project",
+   "options": "Project"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-10 23:15:44.198578",
+ "modified": "2025-09-12 00:58:37.491548",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Sprints",
