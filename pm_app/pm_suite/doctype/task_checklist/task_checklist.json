@@ -14,21 +14,21 @@
    "fieldname": "item",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "item",
+   "label": "Item",
    "reqd": 1
   },
   {
    "default": "0",
    "fieldname": "is_done",
    "fieldtype": "Check",
-   "label": "is_done"
+   "label": "Is done"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-12 00:38:58.752389",
+ "modified": "2025-09-12 14:28:46.734252",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Task Checklist",

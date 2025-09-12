@@ -1,14 +1,18 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-09-11 22:29:26.768453",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "company_name",
-  "address",
+  "naming_series",
+  "column_break_ubnk",
   "phone",
   "email",
+  "section_break_nzyw",
+  "address",
   "is_active"
  ],
  "fields": [
@@ -22,7 +26,7 @@
   },
   {
    "fieldname": "address",
-   "fieldtype": "Data",
+   "fieldtype": "Small Text",
    "label": "Address"
   },
   {
@@ -40,15 +44,33 @@
    "fieldname": "is_active",
    "fieldtype": "Check",
    "label": "Is Active"
+  },
+  {
+   "default": "COMP-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "COMP-.#####",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_ubnk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_nzyw",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-12 10:52:00.004199",
+ "modified": "2025-09-12 14:01:28.925567",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Company",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -67,5 +89,7 @@
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "company_name",
+ "track_changes": 1
 }

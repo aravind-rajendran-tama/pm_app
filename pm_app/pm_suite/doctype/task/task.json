@@ -1,71 +1,68 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-09-10 23:10:33.292924",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "subject",
   "project",
-  "company",
   "assigned_to",
-  "status",
   "priority",
+  "naming_series",
+  "column_break_bkjp",
   "due_date",
   "estimated_hours",
+  "actual_hours",
+  "status",
+  "section_break_vwaj",
   "description",
-  "checklist",
-  "is_published"
+  "checklist"
  ],
  "fields": [
   {
    "fieldname": "project",
    "fieldtype": "Link",
-   "label": "project",
+   "label": "Project",
    "options": "Project"
   },
   {
    "fieldname": "due_date",
    "fieldtype": "Date",
-   "label": "due_date"
+   "label": "Due Date"
   },
   {
    "default": "Open",
    "fieldname": "status",
    "fieldtype": "Select",
-   "label": "status",
+   "label": "Status",
    "options": "Open\nIn Progress\nBlocked\nDone"
   },
   {
    "fieldname": "subject",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "subject",
+   "label": "Subject",
    "reqd": 1
-  },
-  {
-   "fieldname": "company",
-   "fieldtype": "Link",
-   "label": "company",
-   "options": "Company"
   },
   {
    "fieldname": "assigned_to",
    "fieldtype": "Link",
-   "label": "assigned_to",
+   "label": "Assigned To",
    "options": "User"
   },
   {
    "default": "Medium",
    "fieldname": "priority",
    "fieldtype": "Select",
-   "label": "priority",
+   "label": "Priority",
    "options": "Low\nMedium\nHigh\nUrgent"
   },
   {
    "fieldname": "estimated_hours",
-   "fieldtype": "Float",
-   "label": "estimated_hours"
+   "fieldtype": "Time",
+   "label": "Estimated Hours"
   },
   {
    "fieldname": "description",
@@ -79,16 +76,30 @@
    "options": "Task Checklist"
   },
   {
-   "default": "0",
-   "fieldname": "is_published",
-   "fieldtype": "Check",
-   "label": "is_published"
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "TASK-.#####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bkjp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_hours",
+   "fieldtype": "Time",
+   "label": "Actual Hours"
+  },
+  {
+   "fieldname": "section_break_vwaj",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-12 00:39:34.953710",
+ "modified": "2025-09-12 14:44:22.952295",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Task",

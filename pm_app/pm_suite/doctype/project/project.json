@@ -1,31 +1,31 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "naming_series:",
  "creation": "2025-09-12 00:12:35.687971",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "project_name",
-  "project_key",
   "company",
+  "naming_series",
+  "column_break_ylyk",
+  "project_manager",
   "status",
+  "progress",
+  "section_break_cljs",
   "start_date",
+  "column_break_juks",
   "end_date",
-  "is_published",
-  "description",
-  "members"
+  "section_break_idiv",
+  "description"
  ],
  "fields": [
   {
    "fieldname": "project_name",
    "fieldtype": "Data",
-   "label": "project_name"
-  },
-  {
-   "fieldname": "project_key",
-   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "project_key",
+   "label": "Project Name",
    "reqd": 1,
    "unique": 1
   },
@@ -33,31 +33,25 @@
    "fieldname": "company",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "company",
+   "label": "Company",
    "options": "Company",
    "reqd": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
-   "label": "status",
+   "label": "Status",
    "options": "Planned\nIn Progress\nOn Hold\nCompleted\nCancelled"
   },
   {
    "fieldname": "start_date",
    "fieldtype": "Date",
-   "label": "start_date"
+   "label": "Start Date"
   },
   {
    "fieldname": "end_date",
    "fieldtype": "Date",
-   "label": "end_date"
-  },
-  {
-   "default": "0",
-   "fieldname": "is_published",
-   "fieldtype": "Check",
-   "label": "is_published"
+   "label": "End Date"
   },
   {
    "fieldname": "description",
@@ -65,16 +59,45 @@
    "label": "description"
   },
   {
-   "fieldname": "members",
+   "fieldname": "column_break_ylyk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_manager",
    "fieldtype": "Link",
-   "label": "members",
-   "options": "Project Member"
+   "label": "Project Manager",
+   "options": "User"
+  },
+  {
+   "fieldname": "progress",
+   "fieldtype": "Percent",
+   "label": "Progress"
+  },
+  {
+   "fieldname": "section_break_cljs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_juks",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_idiv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "PROJ-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "PROJ-.#####",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-12 00:27:18.718116",
+ "modified": "2025-09-12 14:43:48.398493",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Project",
