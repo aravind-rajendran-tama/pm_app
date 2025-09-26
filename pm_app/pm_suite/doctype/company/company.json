@@ -14,7 +14,8 @@
   "website",
   "section_break_nzyw",
   "address",
-  "is_active"
+  "is_active",
+  "route"
  ],
  "fields": [
   {
@@ -67,12 +68,18 @@
    "fieldname": "website",
    "fieldtype": "Data",
    "label": "Website"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-26 13:52:34.976033",
+ "modified": "2025-09-26 15:33:59.767276",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Company",

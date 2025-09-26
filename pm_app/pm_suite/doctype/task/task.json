@@ -16,7 +16,8 @@
   "actual_hours",
   "section_break_vwaj",
   "description",
-  "checklist"
+  "checklist",
+  "route"
  ],
  "fields": [
   {
@@ -85,12 +86,18 @@
    "in_list_view": 1,
    "label": "Task Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-26 14:48:52.797055",
+ "modified": "2025-09-26 15:35:03.470913",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Task",

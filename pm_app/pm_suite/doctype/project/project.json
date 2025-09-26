@@ -17,7 +17,8 @@
   "end_date",
   "section_break_idiv",
   "description",
-  "members"
+  "members",
+  "route"
  ],
  "fields": [
   {
@@ -86,12 +87,18 @@
    "fieldtype": "Table",
    "label": "Members",
    "options": "Project Member"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
   }
  ],
  "grid_page_length": 50,
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-26 13:57:37.391959",
+ "modified": "2025-09-26 15:34:39.924903",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Project",
