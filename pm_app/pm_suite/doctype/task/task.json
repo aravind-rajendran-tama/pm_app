@@ -1,21 +1,19 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "naming_series:",
+ "autoname": "prompt",
  "creation": "2025-09-10 23:10:33.292924",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "subject",
+  "task_name",
   "project",
   "assigned_to",
+  "status",
   "priority",
-  "naming_series",
   "column_break_bkjp",
   "due_date",
   "estimated_hours",
   "actual_hours",
-  "status",
   "section_break_vwaj",
   "description",
   "checklist"
@@ -37,14 +35,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "Open\nIn Progress\nBlocked\nDone"
-  },
-  {
-   "fieldname": "subject",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Subject",
-   "reqd": 1
+   "options": "Open\nIn Progress\nCompleted\nClosed"
   },
   {
    "fieldname": "assigned_to",
@@ -57,7 +48,7 @@
    "fieldname": "priority",
    "fieldtype": "Select",
    "label": "Priority",
-   "options": "Low\nMedium\nHigh\nUrgent"
+   "options": "Low\nMedium\nHigh\nUrgent/Critical"
   },
   {
    "fieldname": "estimated_hours",
@@ -72,15 +63,8 @@
   {
    "fieldname": "checklist",
    "fieldtype": "Table",
-   "label": "checklist",
+   "label": "Checklist",
    "options": "Task Checklist"
-  },
-  {
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "label": "Series",
-   "options": "TASK-.#####",
-   "read_only": 1
   },
   {
    "fieldname": "column_break_bkjp",
@@ -94,15 +78,23 @@
   {
    "fieldname": "section_break_vwaj",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "task_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task Name",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-12 14:44:22.952295",
+ "modified": "2025-09-26 14:48:52.797055",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Task",
+ "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
   {
@@ -121,5 +113,6 @@
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "task_name"
 }

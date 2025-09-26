@@ -11,6 +11,7 @@
   "column_break_ubnk",
   "phone",
   "email",
+  "website",
   "section_break_nzyw",
   "address",
   "is_active"
@@ -49,7 +50,7 @@
    "default": "COMP-.#####",
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Series",
+   "label": "Company Code",
    "options": "COMP-.#####",
    "read_only": 1,
    "set_only_once": 1
@@ -61,12 +62,17 @@
   {
    "fieldname": "section_break_nzyw",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-12 14:01:28.925567",
+ "modified": "2025-09-26 13:52:34.976033",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Company",

@@ -8,17 +8,16 @@
  "field_order": [
   "project_name",
   "company",
-  "naming_series",
   "column_break_ylyk",
-  "project_manager",
   "status",
-  "progress",
+  "naming_series",
   "section_break_cljs",
   "start_date",
   "column_break_juks",
   "end_date",
   "section_break_idiv",
-  "description"
+  "description",
+  "members"
  ],
  "fields": [
   {
@@ -63,17 +62,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "project_manager",
-   "fieldtype": "Link",
-   "label": "Project Manager",
-   "options": "User"
-  },
-  {
-   "fieldname": "progress",
-   "fieldtype": "Percent",
-   "label": "Progress"
-  },
-  {
    "fieldname": "section_break_cljs",
    "fieldtype": "Section Break"
   },
@@ -89,15 +77,21 @@
    "default": "PROJ-.#####",
    "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Series",
+   "label": "Project Code",
    "options": "PROJ-.#####",
    "read_only": 1
+  },
+  {
+   "fieldname": "members",
+   "fieldtype": "Table",
+   "label": "Members",
+   "options": "Project Member"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-12 14:43:48.398493",
+ "modified": "2025-09-26 13:57:37.391959",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Project",

@@ -5,28 +5,45 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "project",
-  "owner_user"
+  "employee",
+  "start_date",
+  "end_date",
+  "total_hours",
+  "entries"
  ],
  "fields": [
   {
-   "fieldname": "project",
+   "fieldname": "employee",
    "fieldtype": "Link",
-   "label": "Project",
-   "options": "Project"
+   "label": "Employee",
+   "options": "User"
   },
   {
-   "default": "Owner",
-   "fieldname": "owner_user",
-   "fieldtype": "Link",
-   "label": "Owner User",
-   "options": "User"
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "total_hours",
+   "fieldtype": "Float",
+   "label": "Total Hours"
+  },
+  {
+   "fieldname": "entries",
+   "fieldtype": "Table",
+   "label": "Timesheet Entry",
+   "options": "Timesheet Entry"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-24 23:43:50.969554",
+ "modified": "2025-09-26 14:55:53.530765",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Timesheet",
