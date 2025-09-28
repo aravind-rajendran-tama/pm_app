@@ -7,13 +7,11 @@
  "field_order": [
   "task_name",
   "project",
-  "assigned_to",
-  "status",
-  "priority",
+  "assignee",
   "column_break_bkjp",
+  "priority",
   "due_date",
-  "estimated_hours",
-  "actual_hours",
+  "status",
   "section_break_vwaj",
   "description",
   "checklist",
@@ -39,22 +37,11 @@
    "options": "Open\nIn Progress\nCompleted\nClosed"
   },
   {
-   "fieldname": "assigned_to",
-   "fieldtype": "Link",
-   "label": "Assigned To",
-   "options": "User"
-  },
-  {
    "default": "Medium",
    "fieldname": "priority",
    "fieldtype": "Select",
    "label": "Priority",
    "options": "Low\nMedium\nHigh\nUrgent/Critical"
-  },
-  {
-   "fieldname": "estimated_hours",
-   "fieldtype": "Time",
-   "label": "Estimated Hours"
   },
   {
    "fieldname": "description",
@@ -72,11 +59,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "actual_hours",
-   "fieldtype": "Time",
-   "label": "Actual Hours"
-  },
-  {
    "fieldname": "section_break_vwaj",
    "fieldtype": "Section Break"
   },
@@ -90,14 +72,21 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "route"
+  },
+  {
+   "fieldname": "assignee",
+   "fieldtype": "Link",
+   "label": "Assignee",
+   "options": "User"
   }
  ],
  "grid_page_length": 50,
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-26 15:35:03.470913",
+ "modified": "2025-09-27 20:22:51.222791",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Task",

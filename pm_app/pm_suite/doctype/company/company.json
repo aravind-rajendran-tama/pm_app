@@ -13,6 +13,7 @@
   "email",
   "website",
   "section_break_nzyw",
+  "column_break_tbme",
   "address",
   "is_active",
   "route"
@@ -72,14 +73,20 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "route"
+  },
+  {
+   "fieldname": "column_break_tbme",
+   "fieldtype": "Column Break",
+   "hidden": 1
   }
  ],
  "grid_page_length": 50,
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-26 15:33:59.767276",
+ "modified": "2025-09-27 20:26:23.330845",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Company",

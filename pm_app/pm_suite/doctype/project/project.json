@@ -7,10 +7,10 @@
  "engine": "InnoDB",
  "field_order": [
   "project_name",
-  "company",
-  "column_break_ylyk",
-  "status",
   "naming_series",
+  "column_break_ylyk",
+  "company",
+  "status",
   "section_break_cljs",
   "start_date",
   "column_break_juks",
@@ -34,8 +34,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Company",
-   "options": "Company",
-   "reqd": 1
+   "options": "Company"
   },
   {
    "fieldname": "status",
@@ -56,7 +55,7 @@
   {
    "fieldname": "description",
    "fieldtype": "Small Text",
-   "label": "description"
+   "label": "Description"
   },
   {
    "fieldname": "column_break_ylyk",
@@ -91,6 +90,7 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "route"
   }
  ],
@@ -98,10 +98,11 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-26 15:34:39.924903",
+ "modified": "2025-09-27 22:40:39.311479",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Project",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -120,5 +121,6 @@
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "project_name"
 }
