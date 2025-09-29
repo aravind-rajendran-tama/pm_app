@@ -237,3 +237,15 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {"doctype": "Website Settings"},
+    {"doctype": "Web Page"},
+    {"doctype": "Web Form"},
+    {"doctype": "Web Template"},
+    {"doctype": "Portal Settings"},
+    {"doctype": "Workspace"},
+    {"doctype": "Dashboard Chart"},
+    {"doctype": "Notification"},
+    {"doctype": "Report"},
+]
+
