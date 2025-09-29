@@ -1,41 +1,32 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
- "creation": "2025-09-11 22:29:26.768453",
+ "creation": "2025-09-29 12:23:12.264258",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "company_name",
-  "naming_series",
-  "column_break_ubnk",
-  "phone",
+  "employee_name",
+  "company",
   "email",
-  "website",
-  "section_break_nzyw",
-  "column_break_tbme",
-  "address",
-  "is_active",
-  "route"
+  "phone",
+  "designation",
+  "status"
  ],
  "fields": [
   {
-   "fieldname": "company_name",
+   "fieldname": "employee_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Company Name",
-   "reqd": 1,
-   "unique": 1
+   "label": "Employee Name",
+   "reqd": 1
   },
   {
-   "fieldname": "address",
-   "fieldtype": "Small Text",
-   "label": "Address"
-  },
-  {
-   "fieldname": "phone",
-   "fieldtype": "Phone",
-   "label": "Phone"
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
   },
   {
    "fieldname": "email",
@@ -43,54 +34,31 @@
    "label": "Email"
   },
   {
-   "default": "0",
-   "fieldname": "is_active",
-   "fieldtype": "Check",
-   "label": "Is Active"
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
   },
   {
-   "default": "COMP-.#####",
-   "fieldname": "naming_series",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Role",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
    "fieldtype": "Select",
-   "label": "Company Code",
-   "options": "COMP-.#####",
-   "read_only": 1,
-   "set_only_once": 1
-  },
-  {
-   "fieldname": "column_break_ubnk",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "section_break_nzyw",
-   "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "website",
-   "fieldtype": "Data",
-   "label": "Website"
-  },
-  {
-   "fieldname": "route",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "route"
-  },
-  {
-   "fieldname": "column_break_tbme",
-   "fieldtype": "Column Break",
-   "hidden": 1
+   "label": "Status",
+   "options": "Active\nInactive"
   }
  ],
  "grid_page_length": 50,
- "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-29 14:30:21.283136",
+ "modified": "2025-09-29 13:26:42.779657",
  "modified_by": "Administrator",
  "module": "PM Suite",
- "name": "Company",
- "naming_rule": "By \"Naming Series\" field",
+ "name": "Employee",
  "owner": "Administrator",
  "permissions": [
   {
@@ -119,6 +87,7 @@
   },
   {
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
@@ -135,7 +104,8 @@
    "read": 1,
    "report": 1,
    "role": "Project Manager",
-   "share": 1
+   "share": 1,
+   "write": 1
   },
   {
    "email": 1,
@@ -159,7 +129,5 @@
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "company_name",
- "track_changes": 1
+ "states": []
 }
