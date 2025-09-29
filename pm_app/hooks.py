@@ -244,7 +244,7 @@ fixtures = [
     # Only include NON-standard (custom) web templates
     {"doctype": "Web Template", "filters": [["standard", "=", 0]]},
     {"doctype": "Portal Settings"},
-    {"doctype": "Workspace"},
+    # {"doctype": "Workspace"},  # temporarily disabled
     {"doctype": "Dashboard Chart"},
     {"doctype": "Notification"},
     {"doctype": "Report"},
