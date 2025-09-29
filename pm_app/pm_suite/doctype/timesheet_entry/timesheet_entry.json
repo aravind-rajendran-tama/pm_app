@@ -15,8 +15,10 @@
   {
    "fieldname": "project",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Project",
-   "options": "Project"
+   "options": "Project",
+   "reqd": 1
   },
   {
    "fieldname": "task",
@@ -44,7 +46,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-26 14:51:53.423524",
+ "modified": "2025-09-30 02:33:46.077347",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Timesheet Entry",
