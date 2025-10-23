@@ -1,12 +1,11 @@
 {
  "actions": [],
- "autoname": "prompt",
  "creation": "2025-09-10 23:10:33.292924",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "task_name",
   "project",
+  "subject",
   "assignee",
   "column_break_bkjp",
   "priority",
@@ -63,13 +62,6 @@
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "task_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Task Name",
-   "reqd": 1
-  },
-  {
    "fieldname": "route",
    "fieldtype": "Data",
    "hidden": 1,
@@ -80,17 +72,23 @@
    "fieldtype": "Link",
    "label": "Assignee",
    "options": "Employee"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-29 15:47:58.955407",
+ "modified": "2025-10-22 22:22:00.991496",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Task",
- "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
   {
@@ -176,6 +174,5 @@
  "row_format": "Dynamic",
  "sort_field": "creation",
  "sort_order": "DESC",
- "states": [],
- "title_field": "task_name"
+ "states": []
 }

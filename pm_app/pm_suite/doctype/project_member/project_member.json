@@ -6,6 +6,7 @@
  "engine": "InnoDB",
  "field_order": [
   "user",
+  "designation",
   "role_in_project",
   "notes"
  ],
@@ -29,13 +30,19 @@
    "fieldname": "notes",
    "fieldtype": "Small Text",
    "label": "Notes"
+  },
+  {
+   "fetch_from": "user.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-29 13:05:23.686432",
+ "modified": "2025-10-22 22:12:57.224055",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Project Member",

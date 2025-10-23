@@ -1,0 +1,26 @@
+{
+  "core_fixtures": [
+    {"doctype": "Custom Field"},
+    {"doctype": "Property Setter"},
+    {"doctype": "Server Script", "filters": [["disabled","=",0]]},
+    {"doctype": "Workspace"},
+    {"doctype": "Report"},
+    {"doctype": "Print Format"},
+    {"doctype": "Dashboard"},
+    {"doctype": "Letter Head"},
+    {"doctype": "Translation"},
+    {"doctype": "Role"}
+  ],
+  "domain": [
+    {"doctype": "Company"},
+    {"doctype": "Project"},
+    {"doctype": "Employee"},
+    {"doctype": "Project Member"},
+    {"doctype": "Sprints"},
+    {"doctype": "Task"},
+    {"doctype": "Task Checklist"},
+    {"doctype": "Timesheet"},
+    {"doctype": "Timesheet Entry"},
+    {"doctype": "Checklist"}
+  ]
+}

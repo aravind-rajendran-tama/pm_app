@@ -248,4 +248,14 @@ fixtures = [
     {"doctype": "Dashboard Chart"},
     {"doctype": "Notification"},
     {"doctype": "Report"},
+    # --- For Export / Import with App ---
+    {"doctype": "Custom Script"},
+    {"doctype": "Custom Field"},
+    {"doctype": "Property Setter"},
+    {"doctype": "Server Script", "filters": [["disabled", "=", 0]]},
+    {"doctype": "Print Format"},
+    {"doctype": "Dashboard"},  # if custom dashboards are created
+    {"doctype": "Letter Head"},
+    {"doctype": "Translation"},
+    {"doctype": "Role"},
 ]

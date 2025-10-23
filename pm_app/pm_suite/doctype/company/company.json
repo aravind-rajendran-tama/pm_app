@@ -1,17 +1,16 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:",
  "creation": "2025-09-11 22:29:26.768453",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "company_name",
-  "naming_series",
+  "website",
+  "company_id",
   "column_break_ubnk",
   "phone",
   "email",
-  "website",
   "section_break_nzyw",
   "column_break_tbme",
   "address",
@@ -49,15 +48,6 @@
    "label": "Is Active"
   },
   {
-   "default": "COMP-.#####",
-   "fieldname": "naming_series",
-   "fieldtype": "Select",
-   "label": "Company Code",
-   "options": "COMP-.#####",
-   "read_only": 1,
-   "set_only_once": 1
-  },
-  {
    "fieldname": "column_break_ubnk",
    "fieldtype": "Column Break"
   },
@@ -68,7 +58,8 @@
   {
    "fieldname": "website",
    "fieldtype": "Data",
-   "label": "Website"
+   "label": "Website",
+   "options": "URL"
   },
   {
    "fieldname": "route",
@@ -80,17 +71,22 @@
    "fieldname": "column_break_tbme",
    "fieldtype": "Column Break",
    "hidden": 1
+  },
+  {
+   "fieldname": "company_id",
+   "fieldtype": "Data",
+   "label": "Company ID",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-29 14:30:21.283136",
+ "modified": "2025-10-22 19:18:29.288574",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Company",
- "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -104,62 +100,11 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Admin",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Company Admin",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Project Manager",
-   "share": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Team Lead",
-   "share": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Dev Team",
-   "share": 1
   }
  ],
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "company_name",
  "track_changes": 1
 }
