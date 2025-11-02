@@ -1,0 +1,8 @@
+{
+"core_fixtures": [],
+"domain": [
+{"doctype": "Company"},
+{"doctype": "Project"},
+{"doctype": "Task"}
+]
+}

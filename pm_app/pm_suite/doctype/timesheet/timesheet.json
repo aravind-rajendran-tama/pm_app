@@ -1,13 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:TS-{#####}",
  "creation": "2025-09-24 23:42:14.344354",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "employee",
-  "start_date",
-  "end_date",
   "total_hours",
   "entries"
  ],
@@ -17,16 +16,6 @@
    "fieldtype": "Link",
    "label": "Employee",
    "options": "User"
-  },
-  {
-   "fieldname": "start_date",
-   "fieldtype": "Date",
-   "label": "Start Date"
-  },
-  {
-   "fieldname": "end_date",
-   "fieldtype": "Date",
-   "label": "End Date"
   },
   {
    "fieldname": "total_hours",
@@ -43,10 +32,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-26 15:16:55.644033",
+ "modified": "2025-10-25 13:29:07.183070",
  "modified_by": "Administrator",
  "module": "PM Suite",
  "name": "Timesheet",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
